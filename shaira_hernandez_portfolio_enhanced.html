@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaira Marie P. Hernandez - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0e6;
+            color: #4e342e;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #d7ccc8;
+            padding: 1rem 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #4e342e;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0%;
+            height: 2px;
+            background-color: #a1887f;
+            transition: width 0.3s ease;
+        }
+        nav ul li a.active {
+            color: #a1887f;
+        }
+        nav ul li a.active::after {
+            width: 100%;
+        }
+        header {
+            background-color: #d7ccc8;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h2 {
+            border-bottom: 2px solid #a1887f;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .skill, .experience-item {
+            margin-bottom: 1rem;
+        }
+        .contact {
+            background-color: #d7ccc8;
+            padding: 2rem;
+            text-align: center;
+        }
+        .contact p {
+            margin: 0.5rem 0;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#intro" class="active">Introduction</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Shaira Marie P. Hernandez</h1>
+        <p>Dedicated to Delivering Exceptional Customer Support</p>
+    </header>
+
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>Sales Customer Support Representative with proven expertise in driving customer satisfaction while supporting sales growth. Skilled in handling inquiries, resolving issues, and guiding clients toward solutions that meet their needs. Adept at building trust, upselling products, and ensuring a seamless customer journey. Dedicated to helping customers find the right solutions while ensuring their experience is smooth and positive. By blending empathy with product knowledge, I aim to resolve concerns, support sales opportunities, and create lasting value for every client interaction.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I started my journey at a very young age. I am passionate about helping customers find the right solutions while driving business growth. With strong communication skills and a customer-first mindset, I excel at resolving inquiries, guiding clients through product options, and identifying opportunities to upsell or cross-sell. My approach blends empathy with sales expertise, ensuring that every interaction builds trust, strengthens relationships, and contributes to long-term success. I thrive in fast-paced environments where problem-solving, teamwork, and customer satisfaction are top priorities.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Our Lady Of Fatima University - Accountancy Business Management</li>
+            <li>ICCT Colleges - Hotel Restaurant Management</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>Upselling & Cross-Selling</h3>
+            <p>Identifying opportunities to recommend additional products or services.</p>
+        </div>
+        <div class="skill">
+            <h3>Product Knowledge</h3>
+            <p>Deep understanding of offerings to match solutions with customer needs.</p>
+        </div>
+        <div class="skill">
+            <h3>Negotiation Skills</h3>
+            <p>Balancing customer satisfaction with business goals.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <strong>Enables Me Inc.</strong> - Reactivation Sales Officer (March 2025 - July 2025)
+        </div>
+        <div class="experience-item">
+            <strong>Rha Rha G. Skin Necessities</strong> - Sales Staff (October 2020 - December 2021)
+        </div>
+        <div class="experience-item">
+            <strong>Shawill Cosmetics</strong> - Beauty Advisor (January 2022 - December 2022)
+        </div>
+        <div class="experience-item">
+            <strong>Results CX</strong> - Technical/Customer Sales Support (February 2023 - December 2024)
+        </div>
+        <div class="experience-item">
+            <strong>Foundever</strong> - Customer Sales Support (January 2026 - April 2026)
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shairapabillohernandez.1@gmail.com">shairapabillohernandez.1@gmail.com</a></p>
+        <p>Phone: <a href="tel:+639701771182">0970 177 1182</a> - Viber / WhatsApp</p>
+    </section>
+
+    <script>
+        // Fade-in animation
+        const sections = document.querySelectorAll("section");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => observer.observe(section));
+
+        // Active nav link highlighting
+        const navLinks = document.querySelectorAll("nav ul li a");
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 70) {
+                    current = section.getAttribute("id");
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === "#" + current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
